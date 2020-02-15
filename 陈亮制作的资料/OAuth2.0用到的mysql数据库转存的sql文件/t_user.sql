@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50725
 File Encoding         : 65001
 
-Date: 2020-02-09 18:21:54
+Date: 2020-02-15 20:55:21
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -25,11 +25,18 @@ CREATE TABLE `t_user` (
   `password` varchar(64) NOT NULL,
   `fullname` varchar(255) NOT NULL COMMENT '用户姓名',
   `mobile` varchar(11) DEFAULT NULL COMMENT '手机号',
+  `icon` varchar(255) DEFAULT NULL,
+  `nickname` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `note` varchar(255) DEFAULT NULL,
+  `createtime` datetime(6) DEFAULT NULL,
+  `logintime` datetime(6) DEFAULT NULL,
+  `status` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of t_user
 -- ----------------------------
-INSERT INTO `t_user` VALUES ('1', 'zhangsan', '$2a$10$aFsOFzujtPCnUCUKcozsHux0rQ/3faAHGFSVb9Y.B1ntpmEhjRtru', '张三', '12342');
-INSERT INTO `t_user` VALUES ('2', 'lisi', '$2a$10$oiYcxrem61ToCYLgvhViSOQSQQYXUT/2drvbz6XGwg681G5b1RIPi', '李四', '32435435');
+INSERT INTO `t_user` VALUES ('1', 'zhangsan', '$2a$10$aFsOFzujtPCnUCUKcozsHux0rQ/3faAHGFSVb9Y.B1ntpmEhjRtru', '张三', '12342', null, '三三', null, null, null, null, null);
+INSERT INTO `t_user` VALUES ('2', 'lisi', '$2a$10$oiYcxrem61ToCYLgvhViSOQSQQYXUT/2drvbz6XGwg681G5b1RIPi', '李四', '32435435', null, '四四', null, null, null, null, null);

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50725
 File Encoding         : 65001
 
-Date: 2020-02-09 18:21:13
+Date: 2020-02-15 20:54:19
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -32,3 +32,5 @@ CREATE TABLE `t_permission` (
 -- ----------------------------
 INSERT INTO `t_permission` VALUES ('1', 'p1', '测试资源 1', '/r/r1');
 INSERT INTO `t_permission` VALUES ('2', 'p2', '测试资源2', '/r/r2');
+INSERT INTO `t_permission` VALUES ('3', 'p3', '测试资源3', '/r/r3');
+INSERT INTO `t_permission` VALUES ('4', 'user', '用户资源', '/user/info');

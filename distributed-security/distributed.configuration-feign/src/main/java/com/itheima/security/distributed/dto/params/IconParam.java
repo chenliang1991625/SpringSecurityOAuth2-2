@@ -1,5 +1,6 @@
 package com.itheima.security.distributed.dto.params;
 import lombok.Data;
+
 import java.io.Serializable;
 /**
  * 修改头像参数

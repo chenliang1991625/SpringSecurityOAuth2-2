@@ -1,5 +1,6 @@
 package com.itheima.security.distributed.domain.returnDto;
 import lombok.Data;
+
 import java.io.Serializable;
 /**
  * 登录参数

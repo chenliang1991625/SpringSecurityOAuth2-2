@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50725
 File Encoding         : 65001
 
-Date: 2020-02-09 18:21:30
+Date: 2020-02-15 20:54:34
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -30,4 +30,8 @@ CREATE TABLE `t_role_permission` (
 -- ----------------------------
 INSERT INTO `t_role_permission` VALUES ('1', '1');
 INSERT INTO `t_role_permission` VALUES ('1', '2');
+INSERT INTO `t_role_permission` VALUES ('1', '3');
+INSERT INTO `t_role_permission` VALUES ('1', '4');
 INSERT INTO `t_role_permission` VALUES ('2', '2');
+INSERT INTO `t_role_permission` VALUES ('2', '3');
+INSERT INTO `t_role_permission` VALUES ('2', '4');

@@ -1,5 +1,6 @@
 package com.itheima.security.distributed.domain;
 import lombok.Data;
+
 import java.io.Serializable;
 /**
  * @author Administrator

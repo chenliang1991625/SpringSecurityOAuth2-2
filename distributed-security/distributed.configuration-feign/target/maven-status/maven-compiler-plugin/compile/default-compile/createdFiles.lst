@@ -1,0 +1,10 @@
+com\itheima\security\distributed\feign\HelloService.class
+com\itheima\security\distributed\feign\ProfileFeign.class
+com\itheima\security\distributed\interceptor\FeignRequestInterceptor.class
+com\itheima\security\distributed\dto\params\PasswordParam.class
+com\itheima\security\distributed\feign\fallback\MyFallBack$1.class
+com\itheima\security\distributed\dto\params\IconParam.class
+com\itheima\security\distributed\feign\fallback\MyFallBack.class
+com\itheima\security\distributed\config\FeignRequestConfiguration.class
+com\itheima\security\distributed\feign\fallback\ProfileFeignFallback.class
+com\itheima\security\distributed\dto\params\ProfileParam.class

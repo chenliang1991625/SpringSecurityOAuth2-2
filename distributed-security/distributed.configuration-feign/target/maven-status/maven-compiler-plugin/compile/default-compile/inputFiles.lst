@@ -1,0 +1,11 @@
+D:\3-myNotes\Spring Security Oauth2.0认证授权专题-热门技术框架\SpringSecurityOAuth2认证授权陈亮制作\distributed-security\distributed.configuration-feign\src\main\java\com\itheima\security\distributed\config\FeignRequestConfiguration.java
+D:\3-myNotes\Spring Security Oauth2.0认证授权专题-热门技术框架\SpringSecurityOAuth2认证授权陈亮制作\distributed-security\distributed.configuration-feign\src\main\java\com\itheima\security\distributed\dto\params\PasswordParam.java
+D:\3-myNotes\Spring Security Oauth2.0认证授权专题-热门技术框架\SpringSecurityOAuth2认证授权陈亮制作\distributed-security\distributed.configuration-feign\src\main\java\com\itheima\security\distributed\dto\params\IconParam.java
+D:\3-myNotes\Spring Security Oauth2.0认证授权专题-热门技术框架\SpringSecurityOAuth2认证授权陈亮制作\distributed-security\distributed.configuration-feign\src\main\java\com\itheima\security\distributed\feign\fallback\UserServiceFallback.java
+D:\3-myNotes\Spring Security Oauth2.0认证授权专题-热门技术框架\SpringSecurityOAuth2认证授权陈亮制作\distributed-security\distributed.configuration-feign\src\main\java\com\itheima\security\distributed\feign\ProfileFeign.java
+D:\3-myNotes\Spring Security Oauth2.0认证授权专题-热门技术框架\SpringSecurityOAuth2认证授权陈亮制作\distributed-security\distributed.configuration-feign\src\main\java\com\itheima\security\distributed\feign\fallback\MyFallBack.java
+D:\3-myNotes\Spring Security Oauth2.0认证授权专题-热门技术框架\SpringSecurityOAuth2认证授权陈亮制作\distributed-security\distributed.configuration-feign\src\main\java\com\itheima\security\distributed\interceptor\FeignRequestInterceptor.java
+D:\3-myNotes\Spring Security Oauth2.0认证授权专题-热门技术框架\SpringSecurityOAuth2认证授权陈亮制作\distributed-security\distributed.configuration-feign\src\main\java\com\itheima\security\distributed\feign\HelloService.java
+D:\3-myNotes\Spring Security Oauth2.0认证授权专题-热门技术框架\SpringSecurityOAuth2认证授权陈亮制作\distributed-security\distributed.configuration-feign\src\main\java\com\itheima\security\distributed\interceptor\FeignConfig.java
+D:\3-myNotes\Spring Security Oauth2.0认证授权专题-热门技术框架\SpringSecurityOAuth2认证授权陈亮制作\distributed-security\distributed.configuration-feign\src\main\java\com\itheima\security\distributed\feign\fallback\ProfileFeignFallback.java
+D:\3-myNotes\Spring Security Oauth2.0认证授权专题-热门技术框架\SpringSecurityOAuth2认证授权陈亮制作\distributed-security\distributed.configuration-feign\src\main\java\com\itheima\security\distributed\dto\params\ProfileParam.java

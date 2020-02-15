@@ -1,0 +1,4 @@
+com\itheima\security\distributed\uua\config\WebSecurityConfig.class
+com\itheima\security\distributed\UAAServer.class
+com\itheima\security\distributed\uua\config\AuthorizationServer.class
+com\itheima\security\distributed\uua\config\TokenConfig.class

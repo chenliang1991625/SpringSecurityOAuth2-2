@@ -1,0 +1,5 @@
+com\itheima\security\distributed\user\dao\UserMapper.class
+com\itheima\security\distributed\user\controller\UserController.class
+com\itheima\security\distributed\user\service\UserService.class
+com\itheima\security\distributed\user\UserServerApplication.class
+com\itheima\security\distributed\user\service\UserServiceImpl.class

@@ -25,9 +25,9 @@ import java.io.IOException;
 public class TokenAuthenticationFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws ServletException, IOException {
-            //解析出头中的token
-//        String token = httpServletRequest.getHeader("json-token");
-        String token = httpServletRequest.getHeader("access_token");
+ //解析出头中的json-token;与oauth2-gateway>>AuthFilter>> ctx.addZuulRequestHeader("json-token", EncryptUtil.encodeUTF8StringBase64(JSON.toJSONString(jsonToken)));该行代码存入的名称一致
+       String token = httpServletRequest.getHeader("json-token");
+//     String token = httpServletRequest.getHeader("access_token");
 //        String token = httpServletRequest.getHeader("Authorization");//这样写不可以
         if(token!=null){
             String json = EncryptUtil.decodeUTF8StringBase64(token);

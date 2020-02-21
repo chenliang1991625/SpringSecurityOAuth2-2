@@ -59,7 +59,12 @@ public class AuthFilter extends ZuulFilter {
             jsonToken.put("principal",principal);
             jsonToken.put("authorities",authorities);
         }
-        //把身份信息和权限信息放在json中，加入http的header中,转发给微服务
+        //与oauth2-consumer-feign>>TokenAuthenticationFilter>>String token = httpServletRequest.getHeader("json-token");该行代码存入取值的名称保持一致
+        //把身份信息和权限信息放在json中,加入http的header中,转发给微服务
+        //用json-token或不是access_token的任意名测试通过(这时toekn没加入请求头),所以不能用access_token,不然会报错(一旦token加入请求头,json转为pojo失败就报错):
+        // com.alibaba.fastjson.JSONException: syntax error, expect {, actual error, pos 0, fastjson-version 1.2.62或"Unrecognized token 'User': was expecting ('true', 'false' or 'null')\n at [Source: (String)\"User(id=1, username=zhangsan, password=$2a$10$aFsOFzujtPCnUCUKcozsHux0rQ/3faAHGFSVb9Y.B1ntpmEhjRtru, mobile=12342, icon=null, nickname=null, fullname=张三, email=null, note=null, createtime=null, logintime=null, status=null)\"; line: 1, column: 5]"
+        //但是加入时用json-token或不是access_token的任意名,其它服务模块获取时用access_token貌似冲突了:应该是oauth2-consumer-feign模块>>LoginController>>info()>>User user1 = JSON.parseObject(getUsername(), User.class);
+        //解析出错了,"json-token"是Map类型，不能直接把json-token转为pojo
         ctx.addZuulRequestHeader("json-token", EncryptUtil.encodeUTF8StringBase64(JSON.toJSONString(jsonToken)));
         return null;
     }

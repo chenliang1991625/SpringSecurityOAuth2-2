@@ -131,7 +131,9 @@ public class LoginController {
             String jsonString = Objects.requireNonNull(response.body()).string();
             Map<String, Object> jsonMap = MapperUtils.json2map(jsonString);
             String token = String.valueOf(jsonMap.get("access_token"));
-            result.put("access_token",token);
+ //    把access_token放入map让前端接受,存储名称为vue-element-admin前端默认名称token,前端使用token就方便了
+           result.put("token",token);
+//         result.put("access_token",token);
 //            result.put("json_token",token);
             RequestTemplate requestTemplate=new RequestTemplate();
 //            放入request域中,陈亮加的
